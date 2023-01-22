@@ -1,8 +1,8 @@
 <template>
-<div id="app">
+
 
   <IndexPage />
-</div>
+
 
 </template>
 

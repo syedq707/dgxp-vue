@@ -7,8 +7,8 @@
 
                 <nav id="primary-menu" v-bind:class="{active: active}">
                     <ul>
-                        <li><a class="navlinks" href="https://digitalgxp.com/wpproxy/literature/">Literature</a></li>
-                        <li><a class="navlinks" href="https://digitalgxp.com/wpproxy/blogs/">Blogs</a></li>
+                        <li><a class="navlinks" href="https://digitalgxp.com/literature/">Literature</a></li>
+                        <li><a class="navlinks" href="https://digitalgxp.com/blogs/">Blogs</a></li>
                         <li><a class="navlinks" href="https://digitalgxp.com/login">Login</a></li>
                     </ul>
                 </nav>
