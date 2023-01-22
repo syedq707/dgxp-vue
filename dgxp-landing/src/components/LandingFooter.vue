@@ -98,6 +98,9 @@
 </template>
 
 <script>
+
+import axios from 'axios'
+
 export default {
     name: 'LandingFooter',
     data() {
@@ -120,8 +123,7 @@ export default {
             } else {
                 this.formEmail = this.formEmail.trim();
                 let app = this;
-                axios
-                .post("/api/dropEmailForDemo", {
+                axios.post("/api/dropEmailForDemo", {
                     name: this.formName,
                     email: this.formEmail,
                     phone: this.formPhone,
