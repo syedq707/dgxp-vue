@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div class="hero-image right">
-                    <img class="img hero-tablet" src="assets/img/hero-tablet-min.png"
+                    <img class="img hero-tablet" src="../assets/img/hero-tablet-min.png"
                         alt="A Tablet View with Digital GxP application loaded on screen" loading="lazy"
                         >
                 </div>
@@ -21,7 +21,7 @@
 
             <div :class="[activeslide===2 ? 'boxed grid center slides active': 'boxed grid center slides']">
                 <div class="hero-image left">
-                    <img class="img" src="assets/img/tree-device-mockup-min.png"
+                    <img class="img" src="../assets/img/tree-device-mockup-min.png"
                         alt="Tablet, Laptop and mobile devices with Digital GxP application loaded on screen"
                         loading="lazy">
                 </div>

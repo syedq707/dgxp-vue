@@ -33,8 +33,14 @@
     import FeatureSection from "../components/FeatureSection.vue";
     import LandingFooter from "../components/LandingFooter.vue";
 
+    import AOS from "aos";
+    import "aos/dist/aos.css";
+
     export default {
         name: 'IndexPage',
+        created () {
+        AOS.init();
+    },
         data() {
             return {
                 title: 'Digital GxP - Digital Documentation towards Pharma 4.0',

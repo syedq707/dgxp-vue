@@ -89,26 +89,26 @@ export default {
     }
 
     .note1 {
-        /* background-image: url("assets/img/sticky-note1.svg"); */
+        /* background-image: url("../assets/img/sticky-note1.svg"); */
         box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
         transform: rotate(0.01deg);
         --rotate: 0.01deg;
     }
 
     .note2 {
-        /* background-image: url("assets/img/sticky-note2.svg"); */
+        /* background-image: url("../assets/img/sticky-note2.svg"); */
         box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
         --rotate: 2deg;
     }
 
     .note3 {
-        /* background-image: url("assets/img/sticky-note3.svg"); */
+        /* background-image: url("../assets/img/sticky-note3.svg"); */
         box-shadow: -4px 3px 4px rgba(0, 0, 0, 0.2);
         --rotate: -3deg;
     }
 
     .note4 {
-        /* background-image: url("assets/img/sticky-note1.svg"); */
+        /* background-image: url("../assets/img/sticky-note1.svg"); */
         box-shadow: -4px 3px 4px rgba(0, 0, 0, 0.2);
         --rotate: -0.6deg;
     }

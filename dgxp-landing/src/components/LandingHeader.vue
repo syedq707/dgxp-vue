@@ -2,7 +2,7 @@
     <header id="header">
             <div class="boxed">
                 <a href="https://digitalgxp.com/" class="logo">
-                    <img id="logo" src="assets/logo/DGxP-Logo.png" alt="Digital GxP logo">
+                    <img id="logo" src="../assets/logo/DGxP-Logo.png" alt="Digital GxP logo">
                 </a>
 
                 <nav id="primary-menu" v-bind:class="{active: active}">
