@@ -74,20 +74,20 @@
                             <form action="" class="contact">
                                 <div class="col c1">
                                     <label for="fname">Full Name</label>
-                                    <input type="text" id="fname" name="name" placeholder="Your name.." v-model="formName">
+                                    <input type="text" id="fname" name="name" placeholder="Your name.." v-model="formName" />
 
                                     <label for="femail">Email</label>
-                                    <input type="email" id="femail" name="lastname" placeholder="Your email.." v-model="formEmail">
+                                    <input type="email" id="femail" name="lastname" placeholder="Your email.." v-model="formEmail" />
 
                                     <label for="phone">Phone</label>
-                                    <input type="tel" id="fphone" name="phone" placeholder="Your phone.." v-model="formPhone">
+                                    <input type="tel" id="fphone" name="phone" placeholder="Your phone.." v-model="formPhone" />
                                 </div>
                                 <div class="col c2">
                                     <label for="subject">Message</label>
                                     <textarea id="message" name="message" placeholder="Your message.."
                                          v-model="formMessage"></textarea>
 
-                                    <input type="button" value="SEND" v-on:click="sendEmail">
+                                    <input type="button" value="SEND" v-on:click="sendContact">
                                 </div>
                             </form>
                         </div>
@@ -113,30 +113,44 @@ export default {
     },
     methods: {
 
-        sendEmail() {
-            
+        sendContact() {
+            let app = this;
+
+            var reg = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            let name = app.formName;
+            let email = app.formEmail;
+            let phone = app.formPhone;
+            let message = app.formMessage;
+
+
+            email = email.trim();
+               
             if (
-                this.formEmail == null ||
-                this.formEmail == ""
+                email == null ||
+                email == "" ||
+                !reg.test(email)
             ) {
                 window.alert("Please Enter a valid email address!");
             } else {
-                this.formEmail = this.formEmail.trim();
-                let app = this;
-                axios.post("/api/dropEmailForDemo", {
-                    name: this.formName,
-                    email: this.formEmail,
-                    phone: this.formPhone,
-                    message: this.formMessage
+                axios
+                .post("https://digitalgxp.com/api/dropMessage", {
+                    name,
+                    email,
+                    phone,
+                    message
                 })
                 .then(function () {
                     // console.log(response);
                     // app.showLoginModal = true;
                     // app.showRegisterModal = false;
                     // app.$router.push("/login");
-                    app.formEmail = "";
+                    //   app.emailForDemo = "";
+                    // document.getElementById("fname").value = '';
+                    // document.getElementById("femail").value = '';
+                    // document.getElementById("fphone").value = '';
+                    // document.getElementById("fmessage").value = '';
                     window.alert(
-                    "Your Email address has been saved for Demo. We will contact you shortly. \n\n-Team Digital GxP"
+                    "Your message has been sent. We will contact you shortly. \n\n-Team Digital GxP"
                     );
                 })
                 .catch(function (error) {
