@@ -14,7 +14,7 @@
                 </div>
                 <div class="hero-image right">
                     <img class="img hero-tablet" src="../assets/img/hero-tablet-min.png"
-                        alt="A Tablet View with Digital GxP application loaded on screen" loading="lazy"
+                        alt="A Tablet View with Digital GxP application loaded on screen"
                         >
                 </div>
             </div>
