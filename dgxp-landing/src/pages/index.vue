@@ -226,21 +226,23 @@
         margin-top: 2em;
     }
 
-    a.btn {
+    button.btn {
         font-size: clamp(1rem, 2vw, 1.2rem);
         font-weight: 600;
         padding: 0.6em 2em;
         border-radius: 8px;
         color: #fff;
+        border: none;
+        cursor: pointer;
     }
 
-    a.primary.btn {
+    button.primary.btn {
         background-color: var(--accent-blue);
         transition: all .3s ease-in-out;
 
     }
 
-    a.primary:hover {
+    button.primary:hover {
         background-color: var(--accent-purple);
         transform: scale(1.2);
     }

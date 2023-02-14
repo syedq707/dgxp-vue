@@ -9,7 +9,7 @@
                         Plan, document and organise your experiments with ease and efficiency
                     </h2>
                     <div class="cta inner" style="--delay: 0.4s">
-                        <a v-on:click="showForm" class="primary btn">Try Now</a>
+                        <button v-on:click="showForm" class="primary btn">Try Now</button>
                     </div>
                 </div>
                 <div class="hero-image right">
@@ -44,7 +44,7 @@
                         Static to Dymanic Platform
                     </h2>
                     <div class="cta inner" style="--delay: 0.6s">
-                        <a v-on:click="showForm" class="primary btn">Get a Quote</a>
+                        <button v-on:click="showForm" class="primary btn">Get a Quote</button>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
                     </h3>
 
                     <div class="cta inner" style="--delay: 0.5s">
-                        <a v-on:click="showForm" class="primary btn">Sign Up Now</a>
+                        <button v-on:click="showForm" class="primary btn">Sign Up Now</button>
                     </div>
                 </div>
 
@@ -402,7 +402,7 @@
                         Virtual Audits & Inspection, Video Doc Creation
                     </h2>
                     <div class="cta inner" style="--delay: 0.5s">
-                        <a v-on:click="showForm" class="primary btn">Pre-order Now</a>
+                        <button v-on:click="showForm" class="primary btn">Pre-order Now</button>
                     </div>
                 </div>
 
