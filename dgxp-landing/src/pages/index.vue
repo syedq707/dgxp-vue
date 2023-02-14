@@ -85,18 +85,21 @@
             font-family: "Poppins";
             src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
             font-weight: normal;
+            font-display: swap;
         }
 
         @font-face {
             font-family: "Poppins";
             src: url("../assets/fonts/Poppins/Poppins-Bold.ttf");
             font-weight: bold;
+            font-display: swap;
         }
 
         @font-face {
             font-family: "Poppins";
             src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf");
             font-weight: 600;
+            font-display: swap;
         }
 
         @font-face {
@@ -104,6 +107,7 @@
             src: url("../assets/fonts/Poppins/Poppins-LightItalic.ttf");
             font-weight: 300;
             font-style: italic;
+            font-display: swap;
         }
 
     :root {
