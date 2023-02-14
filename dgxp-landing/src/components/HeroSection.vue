@@ -393,9 +393,9 @@
                 </div>
 
                 <div class="hero-text">
-                    <h1 class="inner" style="--delay: 0.1s">
+                    <h3 class="inner" style="--delay: 0.1s">
                         <b>Hands-free</b> Integrated <b>IoT Tools</b>
-                    </h1>
+                    </h3>
                     <h2 class="slide inner" style="--delay: 0.3s">
                         Live Video Collaboration, Monitoring & Supervision
                         Voice Notes, E-training, Troubleshooting, FAQs
