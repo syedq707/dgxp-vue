@@ -35,8 +35,10 @@ export default {
                 window.alert("Please Enter a valid email address!");
             } else {
 
+                const api_url = "http://localhost:8000/subscribe/";
+
                 axios
-                .post("https://digitalgxp.com/api/dropEmailForDemo", {
+                .post(api_url, {
                     email,
                 })
                 .then(function () {
