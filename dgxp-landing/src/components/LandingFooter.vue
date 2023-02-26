@@ -154,8 +154,10 @@ export default {
     };
   },
   methods: {
-    sendContact() {
+    async sendContact() {
       let app = this;
+
+      const api_url = "https://digitalgxp.com/email/contact/";
 
       var reg =
         /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -179,8 +181,8 @@ export default {
       } else if (!message) {
         window.alert("Please enter a Message.");
       } else {
-        axios
-          .post("http://localhost:8000/contact/", {
+        let res = await axios
+          .post(api_url, {
             name,
             email,
             phone,
@@ -203,6 +205,8 @@ export default {
           .catch(function (error) {
             console.log(error);
           });
+
+        console.log(res);
       }
     },
   },
