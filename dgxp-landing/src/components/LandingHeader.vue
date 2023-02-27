@@ -20,7 +20,7 @@
             <a class="navlinks" href="https://digitalgxp.com/blog/">Blogs</a>
           </li>
           <li>
-            <a class="navlinks" href="https://digitalgxp.com/app/login"
+            <a class="navlinks" href="https://app.digitalgxp.com/login"
               >Login</a
             >
           </li>
