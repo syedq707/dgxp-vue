@@ -322,7 +322,7 @@ footer {
 }
 
 .wide {
-  width: min(90vw, 1600px);
+  width: min(90vw, calc(1600px - 8rem));
 }
 
 .grid {

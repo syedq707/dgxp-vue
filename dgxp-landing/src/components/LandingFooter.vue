@@ -295,7 +295,7 @@ form .col {
 
 @media only screen and (min-width: 1025px) {
   footer .grid-three {
-    grid-template-columns: 2fr 1.5fr 3fr;
+    grid-template-columns: 1fr 1fr 2fr;
   }
 }
 </style>
