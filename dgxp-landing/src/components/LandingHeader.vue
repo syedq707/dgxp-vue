@@ -1,6 +1,6 @@
 <template>
   <header id="header">
-    <div class="boxed">
+    <div class="wide">
       <a href="https://digitalgxp.com/" class="logo">
         <img
           id="logo"
@@ -12,12 +12,10 @@
       <nav id="primary-menu" v-bind:class="{ active: active }">
         <ul>
           <li>
-            <a class="navlinks" href="https://digitalgxp.com/blog/literature/"
-              >Literature</a
-            >
+            <a class="navlinks" href="https://digitalgxp.com/">Home</a>
           </li>
           <li>
-            <a class="navlinks" href="https://digitalgxp.com/blog/">Blogs</a>
+            <a class="navlinks" href="https://digitalgxp.com/blog/">Blog</a>
           </li>
           <li>
             <a class="navlinks" href="https://app.digitalgxp.com/login"
@@ -159,7 +157,7 @@ header.shrink #toggle-btn div {
   background-color: #fff;
 }
 
-header .boxed {
+header .wide {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
