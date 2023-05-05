@@ -22,7 +22,7 @@
           </div>
 
           <div class="notes note3">
-            <h4>Log<br> Breaks</h4>
+            <h4>Log<br> Books</h4>
           </div>
 
           <div class="notes note2">

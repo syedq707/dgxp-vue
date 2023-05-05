@@ -58,7 +58,7 @@
             loading="lazy"
             class="ilustration"
           />
-          <h4 class="center">Overcome Humam Error</h4>
+          <h4 class="center">Overcome Human Error</h4>
         </div>
 
         <div
