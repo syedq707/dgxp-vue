@@ -10,7 +10,9 @@
                         Plan, document and organise your experiments with ease and efficiency
                     </h2>
                     <div class="cta inner" style="--delay: 0.4s">
-                        <button v-on:click="showForm" class="primary btn">Try Now</button>
+                        <button class="primary btn">
+                            <a href="#cta-section">Try Now</a>
+                        </button>
                     </div>
                 </div>
                 <div class="hero-image right">
@@ -45,7 +47,9 @@
                         Static to Dymanic Platform
                     </h2>
                     <div class="cta inner" style="--delay: 0.6s">
-                        <button v-on:click="showForm" class="primary btn">Get a Quote</button>
+                        <button v-on:click="showForm" class="primary btn">
+                            <a href="#cta-section">Create a Free Account</a>
+                        </button>
                     </div>
                 </div>
 
@@ -66,7 +70,9 @@
                     </h3>
 
                     <div class="cta inner" style="--delay: 0.5s">
-                        <button v-on:click="showForm" class="primary btn">Sign Up Now</button>
+                        <button class="primary btn">
+                            <a href="#cta-section">Sign Up Now</a>
+                        </button>
                     </div>
                 </div>
                 <div >
@@ -405,7 +411,7 @@
                         Virtual Audits & Inspection, Video Doc Creation
                     </h2>
                     <div class="cta inner" style="--delay: 0.5s">
-                        <button v-on:click="showForm" class="primary btn">Pre-order Now</button>
+                        <button class="primary btn"><a href="#cta-section">Pre-order Now</a></button>
                     </div>
                 </div>
 
@@ -423,7 +429,7 @@
             <p class="test">“Great tool with great potential of using in clinical trials”</p>
             <div class="col-2">
                 <p class="cus-name">- VP Clinical, Ultragenyx</p>
-                <a href="#testimonials">Read More</a>
+                <!-- <a href="#testimonials">Read More</a> -->
             </div>
             
           </div>
@@ -431,14 +437,14 @@
                <p class="test">“This technology seems very futuristic and up-and-coming”</p>
                <div class="col-2">
                     <p class="cus-name">- Manufacturing Manager, Insmed</p>
-                    <a href="#testimonials">Read More</a>
+                    <!-- <a href="#testimonials">Read More</a> -->
                </div>
           </div>
           <div class="testmonial">
                <p class="test">“This can be very useful for all the big pharma”</p>
                <div class="col-2">
                     <p class="cus-name">- Senior Scientist, Noblegen</p>
-                    <a href="#testimonials">Read More</a>
+                    <!-- <a href="#testimonials">Read More</a> -->
                 </div>
           </div>
       </div>
@@ -589,6 +595,7 @@ export default {
 
      .problem-list {
         background-color: rgba(255, 250, 252, 0.4);
+        backdrop-filter: blur(6px); /* Note: backdrop-filter has minimal browser support */
         border-radius: 2em;
         padding: 3em;
 
@@ -629,16 +636,21 @@ export default {
     }
 
     #hero-section .testmonial {
-        background: rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.4);
         backdrop-filter: blur(6px); /* Note: backdrop-filter has minimal browser support */
 
         border-radius: 12px;
         padding: 1rem 2rem;
     }
 
+    p.test {
+        line-height: 1.8em;
+        margin-block: 0;
+    }
+
     p.cus-name {
         font-size: clamp(0.8rem, 1vw, 1rem);
-        line-height: 1.3em;
+        line-height: 1em;
         font-weight: 600;
     }
 
@@ -652,6 +664,7 @@ export default {
     #hero-section .social-proof a {
         font-size: clamp(0.8rem, 1vw, 1rem);
         color: var(--dark-grey);
+        line-height: 1em;
     }
 
     #hero-section .social-proof a:hover {
