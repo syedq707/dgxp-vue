@@ -94,7 +94,7 @@ export default {
 }
 
 #benefits-section {
-  padding: clamp(4rem, 10vw, 8rem) 0;
+  padding: clamp(6rem, 14vw, 12rem) 0;
 }
 
 #benefits-section .grid {

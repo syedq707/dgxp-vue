@@ -22,6 +22,11 @@
               >Login</a
             >
           </li>
+          <li>
+            <button class="primary btn">
+              <a href="#cta-section">Try Now</a>
+            </button>
+          </li>
         </ul>
       </nav>
 
@@ -168,28 +173,34 @@ nav#primary-menu ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 
-  row-gap: 4em;
+  gap: 4rem;
+  white-space: nowrap;
 }
 
 nav#primary-menu {
   position: absolute;
   top: 0;
   right: 0;
-  width: clamp(10rem, 40%, 20rem);
+  /* width: clamp(10rem, 40%, 20rem); */
   transform: translateX(200%);
 }
 
 nav#primary-menu.active {
   background-color: #000;
-  padding: 30% 10%;
+  padding: 20% 10%;
   transform: translateX(0);
   transition: all 0.6 ease-in-out;
 }
 
 nav#primary-menu.active a.navlinks {
   color: #fff;
+}
+
+header button.btn {
+   font-size: 1rem;
+   white-space: nowrap;
 }
 
 /* nav#primary-menu ul li,

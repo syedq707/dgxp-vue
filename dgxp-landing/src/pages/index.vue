@@ -9,9 +9,11 @@
 
     <HeroSection @toggleShowForm="updateShowForm" />
 
+    <ApplicationSection />
+
     <BenefitSection />
 
-    <ApplicationSection />
+    <CTASection />
 
     <FeatureSection />
 
@@ -26,11 +28,13 @@ import FloatingForm from "../components/FloatingForm.vue";
 import FloatingButton from "../components/FloatingButton.vue";
 import BenefitSection from "../components/BenefitSection.vue";
 import ApplicationSection from "../components/ApplicationSection.vue";
+import CTASection from '../components/CTASection.vue';
 import FeatureSection from "../components/FeatureSection.vue";
 import LandingFooter from "../components/LandingFooter.vue";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 
 export default {
   name: "IndexPage",
@@ -73,6 +77,7 @@ export default {
     FloatingButton,
     BenefitSection,
     ApplicationSection,
+    CTASection,
     FeatureSection,
     LandingFooter,
   },
@@ -120,6 +125,10 @@ export default {
   --dark-grey: #404040;
   --dark-bg: #1f1f1f;
   --light-grey: #c0c0c0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -227,6 +236,10 @@ a.navlinks:focus {
 
 .cta {
   margin-top: 2em;
+}
+
+button a {
+  color: #fff;
 }
 
 button.btn {

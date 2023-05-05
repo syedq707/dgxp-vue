@@ -111,7 +111,7 @@
               <input
                 type="email"
                 id="femail"
-                name="lastname"
+                name="email"
                 placeholder="Your email.."
                 v-model="formEmail"
               />

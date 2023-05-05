@@ -1,8 +1,8 @@
 <template>
   <section id="application-section">
       <div class="boxed">
-        <h3 class="center" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-out">All-in-One
-                    Documentation Solution For You</h3>
+        <h3 class="center" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-out">Your All-in-One
+                    Documentation Solution</h3>
           <video class="video" poster="../assets/img/dgxp-video-poster-min.jpg" autoplay loop muted
                     data-aos="zoom-in" data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-delay="200">
             <!-- HTML 5 browsers will play one of these -->
