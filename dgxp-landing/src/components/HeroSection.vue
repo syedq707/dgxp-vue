@@ -1,9 +1,10 @@
 <template>
   <section id="hero-section">
-         <div :class="[activeslide === 1 ? 'boxed grid center slides active': 'boxed grid center slides']">
+      <div class="hero-slider boxed">
+         <div :class="[activeslide === 1 ? 'grid center slides active': 'grid center slides']">
                 <div class="hero-text">
                     <h1 class="inner" style="--delay: 0.1s">
-                        <b>Complete</b> end to end <b>Digitalization</b> towards a <b>Paperless</b> Platform
+                        <b>Complete</b> end to end <b>Digitalization</b> towards a <b>Paperless</b> Platform For <b>Pharma</b> & Lab
                     </h1>
                     <h2 class="inner" style="--delay: 0.2s">
                         Plan, document and organise your experiments with ease and efficiency
@@ -19,7 +20,7 @@
                 </div>
             </div>
 
-            <div :class="[activeslide===2 ? 'boxed grid center slides active': 'boxed grid center slides']">
+            <div :class="[activeslide===2 ? 'grid center slides active': 'grid center slides']">
                 <div class="hero-image left">
                     <img class="img" src="../assets/img/tree-device-mockup-min.png"
                         alt="Tablet, Laptop and mobile devices with Digital GxP application loaded on screen"
@@ -50,7 +51,7 @@
 
             </div>
 
-            <div :class="[activeslide===3 ? 'boxed grid center slides active': 'boxed grid center slides']">
+            <div :class="[activeslide===3 ? 'grid center slides active': 'grid center slides']">
 
                 <div class="hero-text">
 
@@ -68,79 +69,81 @@
                         <button v-on:click="showForm" class="primary btn">Sign Up Now</button>
                     </div>
                 </div>
+                <div >
+                    <ul class="problem-list right">
+                        <li class="problem" style="--degree: 181deg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
+                                    transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
+                                <rect width="6.72098" height="26.8839" rx="2"
+                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
+                                    fill="#D42E4C" />
+                            </svg>
+                            <h4>Manual & Inefficient</h4>
+                        </li>
 
-                <ul class="problem-list right">
-                    <li class="problem" style="--degree: 181deg">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
-                                transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
-                            <rect width="6.72098" height="26.8839" rx="2"
-                                transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
-                                fill="#D42E4C" />
-                        </svg>
-                        <h4>Manual & Inefficient</h4>
-                    </li>
+                        <li class="problem" style="--degree: 178deg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
+                                    transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
+                                <rect width="6.72098" height="26.8839" rx="2"
+                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
+                                    fill="#D42E4C" />
+                            </svg>
+                            <h4>Difficult to Follow</h4>
+                        </li>
 
-                    <li class="problem" style="--degree: 178deg">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
-                                transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
-                            <rect width="6.72098" height="26.8839" rx="2"
-                                transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
-                                fill="#D42E4C" />
-                        </svg>
-                        <h4>Difficult to Follow</h4>
-                    </li>
+                        <li class="problem" style="--degree: 180deg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
+                                    transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
+                                <rect width="6.72098" height="26.8839" rx="2"
+                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
+                                    fill="#D42E4C" />
+                            </svg>
+                            <h4>Data Entry Error</h4>
+                        </li>
 
-                    <li class="problem" style="--degree: 180deg">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
-                                transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
-                            <rect width="6.72098" height="26.8839" rx="2"
-                                transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
-                                fill="#D42E4C" />
-                        </svg>
-                        <h4>Data Entry Error</h4>
-                    </li>
+                        <li class="problem" style="--degree: 181deg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
+                                    transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
+                                <rect width="6.72098" height="26.8839" rx="2"
+                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
+                                    fill="#D42E4C" />
+                            </svg>
+                            <h4>Lack of Visualization</h4>
+                        </li>
 
-                    <li class="problem" style="--degree: 181deg">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
-                                transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
-                            <rect width="6.72098" height="26.8839" rx="2"
-                                transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
-                                fill="#D42E4C" />
-                        </svg>
-                        <h4>Lack of Visualization</h4>
-                    </li>
+                        <li class="problem" style="--degree: 179deg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
+                                    transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
+                                <rect width="6.72098" height="26.8839" rx="2"
+                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
+                                    fill="#D42E4C" />
+                            </svg>
+                            <h4>Limited Traceability</h4>
+                        </li>
 
-                    <li class="problem" style="--degree: 179deg">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
-                                transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
-                            <rect width="6.72098" height="26.8839" rx="2"
-                                transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
-                                fill="#D42E4C" />
-                        </svg>
-                        <h4>Limited Traceability</h4>
-                    </li>
+                        <li class="problem" style="--degree: 178deg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
+                                    transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
+                                <rect width="6.72098" height="26.8839" rx="2"
+                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
+                                    fill="#D42E4C" />
+                            </svg>
+                            <h4>Limited Collaboration</h4>
+                        </li>
 
-                    <li class="problem" style="--degree: 178deg">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.237305" y="4.75244" width="6.72098" height="26.8839" rx="2"
-                                transform="rotate(-45 0.237305 4.75244)" fill="#D42E4C" />
-                            <rect width="6.72098" height="26.8839" rx="2"
-                                transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.7627 4.75244)"
-                                fill="#D42E4C" />
-                        </svg>
-                        <h4>Limited Collaboration</h4>
-                    </li>
-
-                </ul>
+                    </ul>
+                </div>
+                
 
             </div>
 
-            <div :class="[activeslide===4 ? 'boxed grid center slides active': 'boxed grid center slides']">
+            <div :class="[activeslide===4 ? 'grid center slides active': 'grid center slides']">
 
                 <div class="hero-image left" data-aos="fade-right" data-aos-duration="2000">
                     <svg class="img" width="630" height="529" viewBox="0 0 630 529" fill="none"
@@ -414,6 +417,31 @@
                 <span :class="[activeslide===3 ? 'dot active' :'dot']" v-on:click="goToSlide(3)"></span>
                 <span :class="[activeslide===4 ? 'dot active' :'dot']" v-on:click="goToSlide(4)"></span>
             </div>
+      </div>
+      <div class="social-proof grid-three">
+          <div class="testmonial">
+            <p class="test">“Great tool with great potential of using in clinical trials”</p>
+            <div class="col-2">
+                <p class="cus-name">- VP Clinical, Ultragenyx</p>
+                <a href="#testimonials">Read More</a>
+            </div>
+            
+          </div>
+          <div class="testmonial">
+               <p class="test">“This technology seems very futuristic and up-and-coming”</p>
+               <div class="col-2">
+                    <p class="cus-name">- Manufacturing Manager, Insmed</p>
+                    <a href="#testimonials">Read More</a>
+               </div>
+          </div>
+          <div class="testmonial">
+               <p class="test">“This can be very useful for all the big pharma”</p>
+               <div class="col-2">
+                    <p class="cus-name">- Senior Scientist, Noblegen</p>
+                    <a href="#testimonials">Read More</a>
+                </div>
+          </div>
+      </div>
     </section>
 </template>
 
@@ -425,7 +453,7 @@ export default {
         sliderTimer: 0,
         activeslide: 1,
         slidercount: 4,
-        sliderinterval: 7500,
+        sliderinterval: 10000,
       }
     },
     mounted : function(){
@@ -437,7 +465,7 @@ export default {
             let self = this;
             this.sliderTimer = setInterval(function(){
                 self.nextSlide()
-            }, 7500);
+            }, 10000);
         },
 
 
@@ -480,8 +508,8 @@ export default {
 </script>
 
 <style>
-       #hero-section {
-        padding: 8rem 0;
+    #hero-section {
+        padding: 4rem 0;
         background: #fcfaf9;
         background: linear-gradient(45deg,
                 rgba(146, 102, 226, 0.51) 0%,
@@ -494,22 +522,25 @@ export default {
         /* filter: blur(8px); */
         display: grid;
         place-items: center;
-        grid-template-columns: 1;
-        grid-template-rows: 1;
-        position: relative;
+        grid-template-columns: 1fr;
     }
 
-    .slides {
+    .hero-slider {
+        position: relative;
+        display: grid;
+        place-items: center;
         grid-row: 1 / 2;
         grid-column: 1/2;
-
+        padding: 2rem 0;
     }
+
+
 
      /* The dots/bullets/indicators */
 
     .dots {
         position: absolute;
-        bottom: 6rem;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
 
@@ -543,7 +574,7 @@ export default {
         justify-content: center;
         align-items: flex-start;
         gap: 1.2em;
-        padding-bottom: 6em;
+        padding-bottom: 4em;
     }
 
      .hero-image .img {
@@ -559,7 +590,7 @@ export default {
      .problem-list {
         background-color: rgba(255, 250, 252, 0.4);
         border-radius: 2em;
-        padding: 3em 4em 3em 2.5em;
+        padding: 3em;
 
         display: flex;
         flex-direction: column;
@@ -583,6 +614,49 @@ export default {
 
     }
 
+    #hero-section .social-proof {
+        padding-top: 4rem;
+    }
+
+    
+    #hero-section .grid-three {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 2rem;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    #hero-section .testmonial {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(6px); /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 12px;
+        padding: 1rem 2rem;
+    }
+
+    p.cus-name {
+        font-size: clamp(0.8rem, 1vw, 1rem);
+        line-height: 1.3em;
+        font-weight: 600;
+    }
+
+    #hero-section .col-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #hero-section .social-proof a {
+        font-size: clamp(0.8rem, 1vw, 1rem);
+        color: var(--dark-grey);
+    }
+
+    #hero-section .social-proof a:hover {
+        color: var(--accent-blue);
+    }
 
         /*---------------------------------  CSS Animations ----------------------------*/
 
@@ -594,16 +668,17 @@ export default {
 
     .slides.grid.active {
         display: grid;
+        align-items: center;
     }
 
     .slides.active .left {
         /* opacity: 1; */
-        animation: fadeRight 8s ease-in-out;
+        animation: fadeRight 10s ease-in-out;
     }
 
     .slides.active .right {
         /* opacity: 1; */
-        animation: fadeLeft 8s ease-in-out;
+        animation: fadeLeft 10s ease-in-out;
     }
 
     .slides .inner {
@@ -611,7 +686,7 @@ export default {
     }
 
     .slides.active .inner {
-        animation: fadeUp 8s ease-in-out var(--delay);
+        animation: fadeUp 10s ease-in-out var(--delay);
     }
 
 
@@ -680,8 +755,12 @@ export default {
 
     @media only screen and (min-width: 1025px) {
 
-        #hero-section {
-            height: 80vh;
+        .right {
+            margin-top: 0;
+        }
+
+        .slides {
+            min-height: 600px;
         }
 
         .hero-text.left {
@@ -699,6 +778,14 @@ export default {
         .hero-image.right {
             margin-top: 0;
             padding-left: 1em;
+        }
+
+        #hero-section .social-proof {
+            padding-top: 2rem;
+        }
+
+        #hero-section .grid-three {
+            grid-template-columns: repeat(auto-fit, minmax( 500px,1fr));
         }
     }
 </style>

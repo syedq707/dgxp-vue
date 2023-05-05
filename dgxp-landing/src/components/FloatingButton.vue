@@ -48,8 +48,8 @@ export default {
         gap: 0.5rem;
 
         position: fixed;
-        bottom: 1rem;
-        right: 1rem;
+        bottom: 0.5rem;
+        right: 0.5rem;
         z-index: 200;
     }
 
@@ -78,8 +78,8 @@ export default {
     @media only screen and (min-width: 1025px) {
          
         .floating-btn {
-            bottom: 4rem;
-            right: 6rem;
+            bottom: 2rem;
+            right: 2rem;
         }
      }
 </style>
