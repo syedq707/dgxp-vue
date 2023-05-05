@@ -47,7 +47,7 @@
                         Static to Dymanic Platform
                     </h2>
                     <div class="cta inner" style="--delay: 0.6s">
-                        <button v-on:click="showForm" class="primary btn">
+                        <button  class="primary btn">
                             <a href="#cta-section">Create a Free Account</a>
                         </button>
                     </div>
