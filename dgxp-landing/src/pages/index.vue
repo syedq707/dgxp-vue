@@ -17,6 +17,8 @@
 
     <FeatureSection />
 
+    <SurveySection />
+
     <LandingFooter />
   </div>
 </template>
@@ -28,13 +30,13 @@ import FloatingForm from "../components/FloatingForm.vue";
 import FloatingButton from "../components/FloatingButton.vue";
 import BenefitSection from "../components/BenefitSection.vue";
 import ApplicationSection from "../components/ApplicationSection.vue";
-import CTASection from '../components/CTASection.vue';
+import CTASection from "../components/CTASection.vue";
+import SurveySection from "../components/SurveySection.vue";
 import FeatureSection from "../components/FeatureSection.vue";
 import LandingFooter from "../components/LandingFooter.vue";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 
 export default {
   name: "IndexPage",
@@ -79,6 +81,7 @@ export default {
     ApplicationSection,
     CTASection,
     FeatureSection,
+    SurveySection,
     LandingFooter,
   },
   methods: {
