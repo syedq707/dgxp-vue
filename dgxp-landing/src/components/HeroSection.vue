@@ -738,7 +738,7 @@
     </div>
     <div class="social-proof grid-three">
       <div class="testmonial">
-        <p class="test">
+        <p class="text">
           “Great tool with great potential of using in clinical trials”
         </p>
         <div class="col-2">
@@ -747,7 +747,7 @@
         </div>
       </div>
       <div class="testmonial">
-        <p class="test">
+        <p class="text">
           “This technology seems very futuristic and up-and-coming”
         </p>
         <div class="col-2">
@@ -756,7 +756,7 @@
         </div>
       </div>
       <div class="testmonial">
-        <p class="test">“This can be very useful for all the big pharma”</p>
+        <p class="text">“This can be very useful for all the big pharma”</p>
         <div class="col-2">
           <p class="cus-name">- Senior Scientist, Noblegen</p>
           <!-- <a href="#testimonials">Read More</a> -->
@@ -951,9 +951,10 @@ export default {
   padding: 1rem 2rem;
 }
 
-p.test {
+p.text {
   line-height: 1.8em;
   margin-block: 0;
+  font-style: italic;
 }
 
 p.cus-name {
