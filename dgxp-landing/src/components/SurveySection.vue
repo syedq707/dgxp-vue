@@ -1,5 +1,5 @@
 <template>
-  <section id="survey-section">
+  <section id="customer-suveys">
     <div class="background">
       <span></span>
       <span></span>
@@ -18,8 +18,8 @@
     </div>
 
     <div class="survey-container">
-      <h3>Customer Surveys</h3>
-      <div class="arrow arrow-left">
+      <h3 class="center">Customer Surveys</h3>
+      <div class="arrow arrow-left" @click="prevSlide">
         <svg
           width="60"
           height="60"
@@ -27,15 +27,10 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle
-            cx="30"
-            cy="30"
-            r="28"
-            fill="white"
-            fill-opacity="0.4"
-            stroke="#404040"
-            stroke-width="4"
-          />
+          <g filter="url(#filter0_b_757_2)">
+            <circle cx="30" cy="30" r="30" fill="white" fill-opacity="0.4" />
+            <circle cx="30" cy="30" r="28" stroke="#404040" stroke-width="4" />
+          </g>
           <line
             x1="2"
             y1="-2"
@@ -52,11 +47,41 @@
             stroke-width="4"
             stroke-linecap="round"
           />
+          <defs>
+            <filter
+              id="filter0_b_757_2"
+              x="-6"
+              y="-6"
+              width="72"
+              height="72"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feGaussianBlur in="BackgroundImageFix" stdDeviation="3" />
+              <feComposite
+                in2="SourceAlpha"
+                operator="in"
+                result="effect1_backgroundBlur_757_2"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_backgroundBlur_757_2"
+                result="shape"
+              />
+            </filter>
+          </defs>
         </svg>
       </div>
       <div class="suvey-carousel">
         <div
-          :class="[activeslide === 1 ? 'survey-card active' : 'survey-card']"
+          :class="[
+            'survey-card',
+            { active: activeslide === 1 },
+            { left: activeslide === 7 },
+            { right: activeslide === 2 },
+          ]"
         >
           <blockquote class="survey-text">
             It's difficult to complete and sign batch records in laminar flow
@@ -78,7 +103,12 @@
         </div>
 
         <div
-          :class="[activeslide === 2 ? 'survey-card active' : 'survey-card']"
+          :class="[
+            'survey-card',
+            { active: activeslide === 2 },
+            { left: activeslide === 1 },
+            { right: activeslide === 3 },
+          ]"
         >
           <blockquote class="survey-text">
             There's a communication barrier between clinical and non-clinical
@@ -99,7 +129,12 @@
         </div>
 
         <div
-          :class="[activeslide === 3 ? 'survey-card active' : 'survey-card']"
+          :class="[
+            'survey-card',
+            { active: activeslide === 3 },
+            { left: activeslide === 2 },
+            { right: activeslide === 4 },
+          ]"
         >
           <blockquote class="survey-text">
             Very interesting, beautiful and
@@ -126,7 +161,12 @@
         </div>
 
         <div
-          :class="[activeslide === 4 ? 'survey-card active' : 'survey-card']"
+          :class="[
+            'survey-card',
+            { active: activeslide === 4 },
+            { left: activeslide === 3 },
+            { right: activeslide === 5 },
+          ]"
         >
           <blockquote class="survey-text">
             Some people wait to write notes or document issues because they
@@ -151,7 +191,12 @@
         </div>
 
         <div
-          :class="[activeslide === 5 ? 'survey-card active' : 'survey-card']"
+          :class="[
+            'survey-card',
+            { active: activeslide === 5 },
+            { left: activeslide === 4 },
+            { right: activeslide === 6 },
+          ]"
         >
           <blockquote class="survey-text">
             As a summary, I can see its utility in laboratory settings
@@ -168,7 +213,12 @@
         </div>
 
         <div
-          :class="[activeslide === 6 ? 'survey-card active' : 'survey-card']"
+          :class="[
+            'survey-card',
+            { active: activeslide === 6 },
+            { left: activeslide === 5 },
+            { right: activeslide === 7 },
+          ]"
         >
           <blockquote class="survey-text">
             Having a readily available protocol in a lab is useful, but there's
@@ -193,7 +243,12 @@
         </div>
 
         <div
-          :class="[activeslide === 7 ? 'survey-card active' : 'survey-card']"
+          :class="[
+            'survey-card',
+            { active: activeslide === 7 },
+            { left: activeslide === 6 },
+            { right: activeslide === 1 },
+          ]"
         >
           <blockquote class="survey-text">
             In these times of social distancing due to Covid, it's difficult to
@@ -210,11 +265,12 @@
             <br /><br />
           </blockquote>
           <p class="survey-title">
-            <b>- Post Doc. Research Scientist, University of Texas</b>
+            <b>- Post Doc. Research Scientist, University of Cambridge</b>
           </p>
         </div>
       </div>
-      <div class="arrow arrow-right">
+
+      <div class="arrow arrow-right" @click="nextSlide">
         <svg
           width="60"
           height="60"
@@ -222,16 +278,24 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle
-            cx="30"
-            cy="30"
-            r="28"
-            transform="matrix(-1 0 0 1 60 0)"
-            fill="white"
-            fill-opacity="0.4"
-            stroke="#404040"
-            stroke-width="4"
-          />
+          <g filter="url(#filter0_b_757_3)">
+            <circle
+              cx="30"
+              cy="30"
+              r="30"
+              transform="matrix(-1 0 0 1 60 0)"
+              fill="white"
+              fill-opacity="0.4"
+            />
+            <circle
+              cx="30"
+              cy="30"
+              r="28"
+              transform="matrix(-1 0 0 1 60 0)"
+              stroke="#404040"
+              stroke-width="4"
+            />
+          </g>
           <line
             x1="2"
             y1="-2"
@@ -248,6 +312,31 @@
             stroke-width="4"
             stroke-linecap="round"
           />
+          <defs>
+            <filter
+              id="filter0_b_757_3"
+              x="-8"
+              y="-8"
+              width="76"
+              height="76"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feGaussianBlur in="BackgroundImageFix" stdDeviation="4" />
+              <feComposite
+                in2="SourceAlpha"
+                operator="in"
+                result="effect1_backgroundBlur_757_3"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_backgroundBlur_757_3"
+                result="shape"
+              />
+            </filter>
+          </defs>
         </svg>
       </div>
     </div>
@@ -257,11 +346,35 @@
 <script>
 export default {
   name: "SurveySection",
+  data() {
+    return {
+      activeslide: 1, // Currently active slide
+      totalSlides: 7, // Total number of slides
+    };
+  },
+  methods: {
+    // Function to handle click on the left arrow
+    prevSlide() {
+      if (this.activeslide > 1) {
+        this.activeslide--;
+      } else {
+        this.activeslide = 7;
+      }
+    },
+    // Function to handle click on the right arrow
+    nextSlide() {
+      if (this.activeslide < this.totalSlides) {
+        this.activeslide++;
+      } else {
+        this.activeslide = 1;
+      }
+    },
+  },
 };
 </script>
 
 <style>
-#survey-section {
+#customer-suveys {
   position: relative;
   width: 100vw;
 }
@@ -269,16 +382,13 @@ export default {
 .survey-container {
   padding: 8rem 0;
   width: 100%;
-  display: grid;
-  place-items: center;
-  overflow-x: hidden;
 }
 
 .arrow {
   position: absolute;
   top: 50%;
   margin-top: -10px;
-  z-index: 2;
+  z-index: 4;
   cursor: pointer;
   border: none;
   outline: none;
@@ -286,31 +396,66 @@ export default {
   -webkit-user-select: none;
 }
 
+.arrow svg {
+  width: clamp(12px, 8vw, 60px);
+}
+
 .arrow-left {
-  left: 1rem;
+  left: 0.5em;
 }
 
 .arrow-right {
-  right: 1rem;
+  right: 0.5em;
 }
 
 .suvey-carousel {
-  /* width: 100%; */
-  height: 100%;
-  display: flex;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  width: 100%;
+  overflow: hidden;
+
+  position: relative;
+  display: grid;
+  place-items: center;
+
   gap: 4rem;
-  overflow-x: auto;
   padding-top: 2rem;
 }
 
 .survey-card {
+  flex-shrink: 0;
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(
     6px
   ); /* Note: backdrop-filter has minimal browser support */
-  width: min(70ch, 55vw);
+  width: min(70ch, 75vw);
   border-radius: 12px;
-  padding: 4rem;
+  padding: clamp(2rem, 4vw, 4rem);
+  transition: all 0.4s ease-in-out;
+  grid-row: 1 / 2;
+  grid-column: 1/2;
+  display: none;
+}
+
+.survey-card.active {
+  z-index: 2;
+  filter: none;
+  transform: scale(1);
+  display: block;
+}
+
+.survey-card.left {
+  transform: translateX(110%) scale(0.8);
+  display: block;
+  filter: blur(2px);
+}
+
+.survey-card.right {
+  transform: translateX(-110%) scale(0.8);
+  display: block;
+  filter: blur(2px);
 }
 
 .survey-text {
