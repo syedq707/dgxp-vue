@@ -1005,7 +1005,7 @@
         </div>
       </div>
     </div>
-    <a class="read-more" href="#customer-suveys">Read More</a>
+    <a class="read-more" href="#customer-suveys">View Full Survey 🡓</a>
   </section>
 </template>
 
@@ -1185,7 +1185,7 @@ export default {
 }
 
 #hero-section .testmonial {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(
     6px
   ); /* Note: backdrop-filter has minimal browser support */
@@ -1216,7 +1216,8 @@ p.cus-name {
 #hero-section a.read-more {
   margin-top: 2rem;
   font-size: clamp(0.8rem, 1vw, 1rem);
-  color: #1f1f1f;
+  font-weight: 600;
+  color: #000;
   line-height: 1em;
 }
 
