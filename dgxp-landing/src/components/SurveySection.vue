@@ -1,5 +1,5 @@
 <template>
-  <section id="customer-suveys">
+  <section id="testimonials">
     <div class="background">
       <span></span>
       <span></span>
@@ -599,7 +599,7 @@ export default {
 </script>
 
 <style>
-#customer-suveys {
+#testimonials {
   position: relative;
   width: 100vw;
 }

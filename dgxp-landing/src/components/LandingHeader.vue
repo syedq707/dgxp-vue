@@ -24,7 +24,7 @@
           </li>
           <li>
             <button class="primary btn">
-              <a href="#cta-section">Try Now</a>
+              <a href="#sign-up">Try Now</a>
             </button>
           </li>
         </ul>
@@ -199,8 +199,8 @@ nav#primary-menu.active a.navlinks {
 }
 
 header button.btn {
-   font-size: 1rem;
-   white-space: nowrap;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 /* nav#primary-menu ul li,

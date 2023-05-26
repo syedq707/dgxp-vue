@@ -19,7 +19,7 @@
           </h2>
           <div class="cta inner" style="--delay: 0.4s">
             <button class="primary btn">
-              <a href="#cta-section">Try Now</a>
+              <a href="#sign-up">Try Now</a>
             </button>
           </div>
         </div>
@@ -65,7 +65,7 @@
           </h2>
           <div class="cta inner" style="--delay: 0.6s">
             <button class="primary btn">
-              <a href="#cta-section">Create a Free Account</a>
+              <a href="#sign-up">Create a Free Account</a>
             </button>
           </div>
         </div>
@@ -91,7 +91,7 @@
 
           <div class="cta inner" style="--delay: 0.5s">
             <button class="primary btn">
-              <a href="#cta-section">Sign Up Now</a>
+              <a href="#sign-up">Sign Up Now</a>
             </button>
           </div>
         </div>
@@ -500,7 +500,7 @@
           </h2>
           <div class="cta inner" style="--delay: 0.5s">
             <button class="primary btn">
-              <a href="#cta-section">Try Now</a>
+              <a href="#sign-up">Try Now</a>
             </button>
           </div>
         </div>
@@ -949,7 +949,7 @@
           </h2>
           <div class="cta inner" style="--delay: 0.5s">
             <button class="primary btn">
-              <a href="#cta-section">Pre-order Now</a>
+              <a href="#sign-up">Pre-order Now</a>
             </button>
           </div>
         </div>
@@ -1006,8 +1006,24 @@
       </div>
     </div>
     <a class="read-more" href="#customer-suveys"
-      >Read In Details What People Are Saying</a
-    >
+      >Read In Details What People Are Saying
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.0001 21.2501C11.8101 21.2501 11.6201 21.1801 11.4701 21.0301L5.40012 14.9601C5.11012 14.6701 5.11012 14.1901 5.40012 13.9001C5.69012 13.6101 6.17012 13.6101 6.46012 13.9001L12.0001 19.4401L17.5401 13.9001C17.8301 13.6101 18.3101 13.6101 18.6001 13.9001C18.8901 14.1901 18.8901 14.6701 18.6001 14.9601L12.5301 21.0301C12.3801 21.1801 12.1901 21.2501 12.0001 21.2501Z"
+          fill="#000000"
+        />
+        <path
+          d="M12 21.08C11.59 21.08 11.25 20.74 11.25 20.33V3.5C11.25 3.09 11.59 2.75 12 2.75C12.41 2.75 12.75 3.09 12.75 3.5V20.33C12.75 20.74 12.41 21.08 12 21.08Z"
+          fill="#000000"
+        />
+      </svg>
+    </a>
   </section>
 </template>
 
@@ -1225,6 +1241,10 @@ p.cus-name {
 
 #hero-section a.read-more:hover {
   color: var(--accent-blue);
+}
+
+#hero-section a.read-more:hover svg path {
+  fill: var(--accent-blue);
 }
 
 /*---------------------------------  CSS Animations ----------------------------*/

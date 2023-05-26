@@ -1,32 +1,41 @@
 <template>
-<section id="cta-section">
+  <section id="sign-up">
     <div class="boxed">
-        <h3 class="center" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-out">
-            Create a Free Demo Account
-        </h3>
-        <form method="post" id="sign-up" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" data-aos-easing="ease-in-out">
-           
-            <label>Work Email*
-                
-            </label>
-            <input
-            type="email"
-            id="wEmail"
-            name="email"
-            placeholder="Your work email here..."
-            pattern=".+@globex\.com"
-            required
-            v-model="workEmail"
-            />
-            <input
-            type="button"
-            id="signUp"
-            value="SIGN UP"
-            v-on:click="emailSignUp"
-            />
-        </form>
+      <h3
+        class="center"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+      >
+        Create a Free Demo Account
+      </h3>
+      <form
+        method="post"
+        id="sign-up-form"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="300"
+        data-aos-easing="ease-in-out"
+      >
+        <label>Work Email* </label>
+        <input
+          type="email"
+          id="wEmail"
+          name="email"
+          placeholder="Your work email here..."
+          pattern=".+@globex\.com"
+          required
+          v-model="workEmail"
+        />
+        <input
+          type="button"
+          id="signUp"
+          value="SIGN UP"
+          v-on:click="emailSignUp"
+        />
+      </form>
     </div>
-</section>
+  </section>
 </template>
 
 <script>
@@ -78,36 +87,35 @@ export default {
 </script>
 
 <style>
-    #cta-section {
-        background-color: #000;
-        padding: clamp(4rem, 10vw, 8rem) 0;
-        margin: 2rem 0;
-        scroll-margin-top: clamp(2rem, 4vw, 4rem);
-    }
+#sign-up {
+  background-color: #000;
+  padding: clamp(4rem, 10vw, 8rem) 0;
+  margin: 2rem 0;
+  scroll-margin-top: clamp(2rem, 4vw, 4rem);
+}
 
-    #cta-section h3 {
-        color: white;
-    }
+#sign-up h3 {
+  color: white;
+}
 
-    #sign-up {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+#sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    #sign-up input {
-        font-size: clamp(1rem, 2vw, 1.2rem);
-        padding: 0.6em 2em;
-        border-radius: 8px;   
-    }
+#sign-up-form input {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  padding: 0.6em 2em;
+  border-radius: 8px;
+}
 
-    #sign-up #wEmail {
-        width: min(90%, 300px);
-    }
+#sign-up-form #wEmail {
+  width: min(90%, 300px);
+}
 
-    #sign-up input[type="button"],
-    #sign-up input[type="submit"] {
-    margin-top: 1rem;
-    }
-    
+#sign-up-form input[type="button"],
+#sign-up-form input[type="submit"] {
+  margin-top: 1rem;
+}
 </style>
