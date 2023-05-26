@@ -1005,7 +1005,9 @@
         </div>
       </div>
     </div>
-    <a class="read-more" href="#customer-suveys">View Full Survey 🡓</a>
+    <a class="read-more" href="#customer-suveys"
+      >Read In Details What People Are Saying</a
+    >
   </section>
 </template>
 

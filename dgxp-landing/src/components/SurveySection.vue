@@ -18,7 +18,7 @@
     </div>
 
     <div class="survey-container">
-      <h3 class="center">Customer Surveys</h3>
+      <h3 class="center">What People Are Saying</h3>
       <div class="arrow arrow-left" @click="prevSlide">
         <svg
           width="60"
@@ -79,7 +79,7 @@
           :class="[
             'survey-card',
             { active: activeslide === 1 },
-            { left: activeslide === 7 },
+            { left: activeslide === 15 },
             { right: activeslide === 2 },
           ]"
         >
@@ -111,20 +111,22 @@
           ]"
         >
           <blockquote class="survey-text">
-            There's a communication barrier between clinical and non-clinical
-            sides due to specialized language.
+            In general, there is a communication barrier between the clinical
+            and non-clinical sides due to language differences and a gap in
+            understanding reports. Employers value close oversight but it may be
+            challenging for small companies to dedicate a whole team to it.
             <br /><br />
-            Oversight is crucial, but small companies may not have resources for
-            dedicated teams. Electronic documents provide some oversight, but
-            there's a lack of awareness about on-site processes.
-            <br /><br />
-            Virtual visits could improve efficiency and save time in clinical
-            trials.
-            <b>Great tool with great potential of using in clinical trials.</b>
+            Electronic oversight based on reports is insufficient, as critical
+            on-site processes often go unnoticed. This technology benefits
+            oversight in pharmaceutical companies of all sizes, providing timely
+            information and saving time. Virtual visits can revolutionize
+            clinical trials, eliminating the need for physical site visits and
+            unnecessary travel time.
+            <b> Great tool with great potential of using in clinical trials.</b>
             <br /><br />
           </blockquote>
           <p class="survey-title">
-            <b>- VP Clinical, Ultrageny</b>
+            <b>- VP Clinical, Ultragenyx</b>
           </p>
         </div>
 
@@ -247,7 +249,40 @@
             'survey-card',
             { active: activeslide === 7 },
             { left: activeslide === 6 },
-            { right: activeslide === 1 },
+            { right: activeslide === 8 },
+          ]"
+        >
+          <blockquote class="survey-text">
+            Physical movement is a problem in pharma manufacturing, especially
+            between clean-rooms and suites. Electronic documentation is fixed to
+            computer terminals, but
+            <b> if accessed from a tab, the problem is solved.</b>
+            <br /><br />
+            Real-time supervision, troubleshooting, and guidance are crucial.
+            Communication challenges within cleanrooms hinder collaboration.
+            Streamlined document sharing and voice-based interactions would be
+            valuable.
+            <b
+              >Integration with batch records and automated user authentication
+              simplify processes.</b
+            >
+            <br /><br />
+            POV streaming and monitoring from cleanroom operations would greatly
+            help to supercise, without the need to go inside. Auditors can sit
+            in one meeting room and walk the floor and whole process without
+            moving. <b>It's useful from day one.</b> <br /><br />
+          </blockquote>
+          <p class="survey-title">
+            <b>- QA Manager, Amgen</b>
+          </p>
+        </div>
+
+        <div
+          :class="[
+            'survey-card',
+            { active: activeslide === 8 },
+            { left: activeslide === 7 },
+            { right: activeslide === 9 },
           ]"
         >
           <blockquote class="survey-text">
@@ -266,6 +301,196 @@
           </blockquote>
           <p class="survey-title">
             <b>- Post Doc. Research Scientist, University of Cambridge</b>
+          </p>
+        </div>
+
+        <div
+          :class="[
+            'survey-card',
+            { active: activeslide === 9 },
+            { left: activeslide === 8 },
+            { right: activeslide === 10 },
+          ]"
+        >
+          <blockquote class="survey-text">
+            We're digitizing laboratories for enhanced online operations.
+            Portable and interconnected devices are paving the way for a more
+            online-oriented future.
+            <br /><br />
+            Laboratory techniques involve complex physical handling, including
+            sampling, protocol checks, and processing. It's not as
+            straightforward as computer-based tasks from 20 years ago.
+            <br /><br />
+            <b>So, having this device would greatly benefit customers,</b> as
+            videos are more effective than any technical literature. Our
+            industry has to be digital but it takes ages.
+          </blockquote>
+          <p class="survey-title">
+            <b>- Director, Auxilab</b>
+          </p>
+        </div>
+
+        <div
+          :class="[
+            'survey-card',
+            { active: activeslide === 10 },
+            { left: activeslide === 9 },
+            { right: activeslide === 11 },
+          ]"
+        >
+          <blockquote class="survey-text">
+            Prefer automated data-capturing, trending, and detection solutions
+            like paperless systems for efficient on-site note taking and
+            information sharing with supervisors in real time.
+            <b>Live hands-free streaming enhances usability.</b> <br /><br />
+            Some auditors prefer physical on-site viewing, while others prefer
+            virtual options. The regulatory authorities are starting to consider
+            these solutions for monitoring on-site activities.
+            <br /><br />
+            <b
+              >Early event detection, data capture are trending and other AI
+              tools sounds useful in certain situations.</b
+            >
+          </blockquote>
+          <p class="survey-title">
+            <b>- QA Manager, GSK</b>
+          </p>
+        </div>
+
+        <div
+          :class="[
+            'survey-card',
+            { active: activeslide === 11 },
+            { left: activeslide === 10 },
+            { right: activeslide === 12 },
+          ]"
+        >
+          <blockquote class="survey-text">
+            I strongly support the need for
+            <b
+              >supervision and monitoring to identify and rectify errors during
+              execution.</b
+            >
+            Clients expect processes to be executed precisely as documented,
+            minimizing deviations. <br /><br />
+            Cell and gene therapy companies require close monitoring due to the
+            physical handling involved. Bringing clients to the facility ensures
+            correct procedures, but
+            <b
+              >monitoring could be a valuable service if confidentiality is
+              maintained.</b
+            >
+            <br /><br />
+          </blockquote>
+          <p class="survey-title">
+            <b>- Contract Manufacturing Manager, Gilead</b>
+          </p>
+        </div>
+
+        <div
+          :class="[
+            'survey-card',
+            { active: activeslide === 12 },
+            { left: activeslide === 11 },
+            { right: activeslide === 13 },
+          ]"
+        >
+          <blockquote class="survey-text">
+            Recording information from the floor is essential for certain
+            process parameters. On-site professionals use tools like Excel,
+            Delta V, or Pi Software to analyze and record data for later
+            reference. Sometimes use personal phone to take video of activity or
+            screen.
+            <br /><br />
+            Monitoring critical activities, such as column packing, is
+            important. In restricted environments like during CoVid, streaming
+            and monitoring the activities would be helpful.
+            <b
+              >Video recording can aid in references, remote training, and
+              virtual audits.</b
+            >
+            <br /><br />
+          </blockquote>
+          <p class="survey-title">
+            <b>- Sr. Process Engineer, Abbvie</b>
+          </p>
+        </div>
+
+        <div
+          :class="[
+            'survey-card',
+            { active: activeslide === 13 },
+            { left: activeslide === 12 },
+            { right: activeslide === 14 },
+          ]"
+        >
+          <blockquote class="survey-text">
+            I think it is interesting, there is a definitely need for that.
+            <b>The dashboard might be very helpful</b> from a contract
+            manufacturing perspective because the client or others can see.
+            <br /><br />
+          </blockquote>
+          <p class="survey-title">
+            <b>- Process Technologist, Exyte</b>
+          </p>
+        </div>
+
+        <div
+          :class="[
+            'survey-card',
+            { active: activeslide === 14 },
+            { left: activeslide === 13 },
+            { right: activeslide === 15 },
+          ]"
+        >
+          <blockquote class="survey-text">
+            Real-time note taking is crucial during experiments, but it can be
+            time-consuming. Manual methods are currently used, but labs and
+            manufacturing sectors are interested in a more efficient solution.
+            <b>Video capture is the standout feature</b>, offering great value
+            for customer experiments and internal quality control by documenting
+            specific steps effectively. <br /><br />
+            In this restricted travel situation during CoVid, these devices have
+            potential benefits.
+            <b
+              >When combined with an Electronic Notebook plug-in, they offer
+              convenient access to view notes and videos.</b
+            >
+            <br /><br />
+            For inventory management, improved sample tracking is crucial. While
+            older labs may still prefer local storage, newer companies are
+            comfortable with cloud solutions.
+            <br /><br />
+          </blockquote>
+          <p class="survey-title">
+            <b>- Sr. Scientist, Proteona</b>
+          </p>
+        </div>
+
+        <div
+          :class="[
+            'survey-card',
+            { active: activeslide === 15 },
+            { left: activeslide === 14 },
+            { right: activeslide === 1 },
+          ]"
+        >
+          <blockquote class="survey-text">
+            This is a core problem faced by benchtop scientists in biotech labs.
+            While many use Electronic Notebooks, systematically documenting
+            everything remains a challenge, especially for filing IND and NDA.
+            Integration of platforms could greatly improve the process.
+            Currently, data is scattered across multiple computers and software,
+            making it difficult for others to understand. There is room for
+            improvement in this area.
+            <br /><br />
+            So I think that AI and having voice memos would be the technologies
+            of the future. People would start using this kind of things more and
+            more. <b>Useful as a notebook, hotline, video, all in one.</b>
+            <br /><br />
+          </blockquote>
+          <p class="survey-title">
+            <b>- Senior Scientist, Shape Therapeutics</b>
           </p>
         </div>
       </div>
@@ -349,7 +574,7 @@ export default {
   data() {
     return {
       activeslide: 1, // Currently active slide
-      totalSlides: 7, // Total number of slides
+      totalSlides: 15, // Total number of slides
     };
   },
   methods: {
@@ -358,7 +583,7 @@ export default {
       if (this.activeslide > 1) {
         this.activeslide--;
       } else {
-        this.activeslide = 7;
+        this.activeslide = 15;
       }
     },
     // Function to handle click on the right arrow
