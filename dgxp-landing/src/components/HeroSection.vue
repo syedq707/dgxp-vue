@@ -985,7 +985,7 @@
         </p>
         <div class="col-2">
           <p class="cus-name">- VP Clinical, Ultragenyx</p>
-          <!-- <a href="#customer-suveys">Read More</a> -->
+          <!-- <a href="#testimonials">Read More</a> -->
         </div>
       </div>
       <div class="testmonial">
@@ -994,18 +994,18 @@
         </p>
         <div class="col-2">
           <p class="cus-name">- Manufacturing Manager, Insmed</p>
-          <!-- <a href="#customer-suveys">Read More</a> -->
+          <!-- <a href="#testimonials">Read More</a> -->
         </div>
       </div>
       <div class="testmonial">
         <p class="text">“This can be very useful for all the big pharma”</p>
         <div class="col-2">
           <p class="cus-name">- Senior Scientist, Noblegen</p>
-          <!-- <a href="#customer-suveys">Read More</a> -->
+          <!-- <a href="#testimonials">Read More</a> -->
         </div>
       </div>
     </div>
-    <a class="read-more" href="#customer-suveys"
+    <a class="read-more" href="#testimonials"
       >Read In Details What People Are Saying
       <svg
         width="16"
