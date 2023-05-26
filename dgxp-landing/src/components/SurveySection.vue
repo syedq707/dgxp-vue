@@ -425,7 +425,7 @@
           ]"
         >
           <blockquote class="survey-text">
-            I think it is interesting, there is a definitely need for that.
+            I think it is interesting, there is definitely a need for this.
             <b>The dashboard might be very helpful</b> from a contract
             manufacturing perspective because the client or others can see.
             <br /><br />
