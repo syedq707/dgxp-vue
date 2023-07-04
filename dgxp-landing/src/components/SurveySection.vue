@@ -18,7 +18,7 @@
     </div>
 
     <div class="survey-container">
-      <h3 class="center">What People Are Saying</h3>
+      <h3 class="center">What People Are Saying About Us</h3>
       <div class="arrow arrow-left" @click="prevSlide">
         <svg
           width="60"

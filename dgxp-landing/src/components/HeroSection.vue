@@ -1006,7 +1006,7 @@
       </div>
     </div>
     <a class="read-more" href="#testimonials"
-      >Read In Details What People Are Saying
+      >Read What People Are Saying About Us
       <svg
         width="16"
         height="16"
