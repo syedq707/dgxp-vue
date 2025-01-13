@@ -349,9 +349,11 @@ footer {
 .stacked {
   width: 90vw;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr));
-  gap: 1rem;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
 }
 
