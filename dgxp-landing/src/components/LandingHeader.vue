@@ -14,9 +14,9 @@
           <li>
             <a class="navlinks" href="https://digitalgxp.com/">Home</a>
           </li>
-          <li>
+          <!-- <li>
             <a class="navlinks" href="https://digitalgxp.com/blog/">Blog</a>
-          </li>
+          </li> -->
           <li>
             <a class="navlinks" href="https://ray-dgxp.com/login/"
               >Login</a
