@@ -18,7 +18,7 @@
             <a class="navlinks" href="https://digitalgxp.com/blog/">Blog</a>
           </li>
           <li>
-            <a class="navlinks" href="https://ray-dgxp.com/login"
+            <a class="navlinks" href="https://ray-dgxp.com/login/"
               >Login</a
             >
           </li>
